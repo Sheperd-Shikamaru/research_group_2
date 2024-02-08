@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+<div class="format-controller d-flex flex-column">
+    <nav class="navbar fixed-top">
+      <div class="container">
+        <img src="{% static 'images/logo.png' %}" alt="" class="land-logo">
+        <a class="navbar-brand" href="{% url 'landing' %}">AWS</a>
+      </div>
+    </nav>
+        <a href="{% url 'login' %}" class="btn btn-primary custom-hover-color btn-lg mt-4 get_started btn-sm">Get Started</a>
+    </div>
+</div>
+{% endblock content %}
